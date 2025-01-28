@@ -7,7 +7,7 @@ sudo systemctl stop nginx;
 rm -r ~/apps/Gojushinryu-website;
 # cloning git repo
 git clone https://github.com/Mubtasimf443/Gojushinryu-website.git ~/apps/Gojushinryu-website;
-cd ~/apps/Gojushinryu-website;
+cd ~/apps/Gojushinryu-website/sv;
 # installing Defendencies
 npm install;
 #copy env files
