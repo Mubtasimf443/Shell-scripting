@@ -17,4 +17,5 @@ pm2 start ~/apps/Gojushinryu-website/sv/index.js --name app;
 # starting nginx
 sudo systemctl restart nginx;
 nginx -s reload;
+pm2 logs app;
 echo "Alhamdulillah, Server Updated and Started Successfully";
