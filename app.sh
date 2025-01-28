@@ -10,7 +10,11 @@ git clone https://github.com/Mubtasimf443/Gojushinryu-website.git ~/apps/Gojushi
 cd ~/apps/Gojushinryu-website;
 # installing Defendencies
 npm install;
-cp ~/apps/prod.env ~/apps/Gojushinryu-website/d.env;
-pm2 start ~/apps/Gojushinryu-website/index.js --name app;
+#copy env files
+cp ~/apps/prod.env ~/apps/Gojushinryu-website/sv/d.env;
+#starting app
+pm2 start ~/apps/Gojushinryu-website/sv/index.js --name app;
+# starting nginx
 sudo systemctl restart nginx;
 nginx -s reload;
+echo "Alhamdulillah, Server Updated and Started Successfully";
